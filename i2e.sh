@@ -8,7 +8,7 @@
 DICCIONARIO="/usr/share/i2e/i2e.dict"
 DICCIONARIO_LOCAL="$(pwd)/i2e.dict"
 
-if [ ! -f "$DICCIONARIO" ] && [ ! -f "$DICCIONARIO_LOCAL"]; then
+if [ ! -f "$DICCIONARIO" ] && [ ! -f "$DICCIONARIO_LOCAL" ]; then
 {
   echo
   gettext -d i2e -sn "Dictionary"
@@ -17,7 +17,7 @@ if [ ! -f "$DICCIONARIO" ] && [ ! -f "$DICCIONARIO_LOCAL"]; then
   echo
   exit 1
 }
-else if [ ! -f "$DICCIONARIO" ] && [ -f "$DICCIONARIO_LOCAL"]; then
+elif [ ! -f "$DICCIONARIO" ] && [ -f "$DICCIONARIO_LOCAL" ]; then
 {
   DICCIONARIO="$DICCIONARIO_LOCAL"
 }
