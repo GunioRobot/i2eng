@@ -70,8 +70,8 @@ case $OPCION in
     NUMERO=$OPTIND-1
     shift $NUMERO
 
-    PATRON=`echo $* | sed -e 's/[aá]/[aá]/g; s/[eé]/[eé]/g; \
-                      s/[ií]/[ií]/g; s/[oó]/[oó]/; s/[uúü]/[uúü]/g'`
+    PATRON=`echo $* | sed -e 's/[aÃ¡]/[aÃ¡]/g; s/[eÃ©]/[eÃ©]/g; \
+                      s/[iÃ­]/[iÃ­]/g; s/[oÃ³]/[oÃ³]/; s/[uÃºÃ¼]/[uÃºÃ¼]/g'`
     
     if [ "$OPCION" = "e" ]; then
     {
@@ -113,8 +113,8 @@ case $OPCION in
     
     if [ "$OPCION" = "r" ]; then
     {
-      PATRON=`echo $* | sed -e 's/[aá]/[aá]/g; s/[eé]/[eé]/g; \
-                        s/[ií]/[ií]/g; s/[oó]/[oó]/; s/[uúü]/[uúü]/g'`
+      PATRON=`echo $* | sed -e 's/[aÃ¡]/[aÃ¡]/g; s/[eÃ©]/[eÃ©]/g; \
+                        s/[iÃ­]/[iÃ­]/g; s/[oÃ³]/[oÃ³]/; s/[uÃºÃ¼]/[uÃºÃ¼]/g'`
       
       echo
       grep -i ".* : $PATRON .*$" "$DICCIONARIO"
