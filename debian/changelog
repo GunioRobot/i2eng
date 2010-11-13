@@ -1,0 +1,9 @@
+i2e (0.5) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Alfredo Casademunt <darkd@wanadoo.es>  Thu, 10 Feb 2000 02:47:46 +0100
+
+Local variables:
+mode: debian-changelog
+End:

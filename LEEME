@@ -1,0 +1,125 @@
+  README para i2e versión 0.5
+
+
+Introducción:
+-------------
+
+ i2e es un diccionario Inglés-Español desarrollado bajo licencia GPL
+por Alfredo Casademunt <darkd@wanadoo.es> al 8/1/2000.
+ Los fuentes del programa pueden descargarse desde Internet en la
+dirección http://darkd.virtualave.net
+ El autor declina toda responsabilidad derivada del uso del programa y
+lo único que asegura es que ocupara espacio en el disco duro :-)
+
+
+Requerimientos:
+---------------
+
+ gettext y librerías GTK+ 1.2 o posteriores
+
+
+Compilación e instalación:
+--------------------------
+
+Basta (o debería bastar :-) con:
+
+ make
+ su root
+ make install
+
+¡ Ojo ! Si se cambia de lugar el fichero i2e.dict (por defecto situado
+en /usr/share/i2e) se deberá modificar también la variable DICCIONARIO
+del fichero i2e.h
+
+Otros objetivos del Makefile son:
+
+ make clean
+
+para limpiar los restos de la compilación y los ficheros de respaldo
+creados por los editores. Y también:
+
+ su root
+ make uninstall
+
+para desinstalar el programa
+
+
+Agradecimientos:
+----------------
+
+ i2e esta inspirado en el programa eidic.tcl de José Luis Triviño
+<trivino@alcor.lcc.uma.es> y del cual esta tomada (y modificada) la
+base de datos de palabras.
+
+ Gracias a Miquel Collado <miquelc@gestmusic.es> por sus comentarios
+sobre el código fuente
+
+ Gracias también a Amaya Rodrigo Sastre <barbwired@bigfoot.com> por 
+traducir al Inglés los ficheros README y la pagina del manual, así 
+como revisar mi traducción al Inglés de los mensajes emitidos
+por i2e e i2e.sh
+
+ También me arrodillo, humillándome, con abatido servilismo y beso los
+pies del Dios del Unix y la Traducción Lloyd Zusman <lloyd@zusman.net>,
+sin cuyos brillantes conocimientos del uso del inglés y su carácter
+humilde la revisión de la traducción al inglés hubiera quedado relegada
+a la noche de la Historia.
+
+ Gracias a Sergio Ahumada Navea <san@inf.utfsm.cl> por currarse
+el paquete .rpm
+
+ Gracias a José M. Macías <macias@cica.es> y a Ricardo Villalba
+<rvmsoft@jazzfree.com> por sus comentarios para que i2e sea más
+cómodo de usar.
+
+¡ Muchas gracias a todos ellos !
+
+
+El futuro:
+----------
+
+ Es tan incierto... :-)
+Tal vez ¿ una versión en modo texto con la misma funcionalidad que
+la versión para X ?, ¿ integración con el KDE y/o el GNOME ?
+Ya veremos ...
+
+
+Versión 0.2:
+------------
+
+ Ahora funciona bien la tecla <return> del teclado numérico.
+ También he cambiado la pagina del manual.
+
+
+Versión 0.3:
+------------
+
+ Añadido el script i2e.sh para consultar el diccionario en modo texto.
+ Cambios menores en la estructura del diccionario y en la presentación
+de la traducción del Español al Ingles.
+
+
+Versión 0.4:
+------------
+
+ Ahora i2e es sensible a la variable de entorno LANG.
+ Encuentra palabras en Español aunque no se pongan los
+acentos (o se pongan mal).
+ También he cambiado el modo de funcionamiento de la "búsqueda exacta"
+para que aproveche más el diccionario
+ He movido el diccionario al directorio /usr/share/i2e y lo he sometido
+a una revisión en profundidad (espero que la ultima :-).
+
+Versión 0.4.1:
+--------------
+
+Corregido un error al "aprender" y revisada la traducción al Inglés.
+
+
+Versión 0.5:
+------------
+
+ Ahora i2e esta continuamente mirando el portapapeles, de modo que si desde
+cualquier aplicación marcamos con el ratón una palabra i2e la traduce.
+ Los widgets entry ya no tienen una longitud tope.
+ También he actualizado la función "aprender".

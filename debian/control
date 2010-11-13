@@ -1,0 +1,11 @@
+Source: i2e
+Section: text
+Priority: optional
+Maintainer: Alfredo Casademunt <darkd@wanadoo.es>
+Standards-Version: 2.4.0.0
+
+Package: i2e
+Architecture: any
+Depends: gettext,${shlibs:Depends}
+Description: English-Spanish dictionary.
+ English-Spanish dictionary. For X and text mode.

@@ -1,0 +1,6 @@
+?package(i2e):\
+  needs=X11\
+  section="Apps/Text"\
+  description="English-Spanish dictionary."\
+  title="i2e"\
+  command="/usr/X11R6/bin/i2e"
