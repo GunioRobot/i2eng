@@ -1,13 +1,14 @@
-#!/bin/sh
-
-# i2e.sh Versión 0.3
+#!/bin/bash
 
 # Script creado por Alfredo Casademunt (darkd@wanadoo.es) al 8-1-2000
 # bajo licencia GPL como alternativa en modo texto para i2e
+#
+# Modificado por Juan Francisco Cantero Hurtado <iam@juanfra.info>
 
 DICCIONARIO="/usr/share/i2e/i2e.dict"
+DICCIONARIO_LOCAL="$(pwd)/i2e.dict"
 
-if [ ! -f "$DICCIONARIO" ]; then
+if [ ! -f "$DICCIONARIO" ] && [ ! -f "$DICCIONARIO_LOCAL"]; then
 {
   echo
   gettext -d i2e -sn "Dictionary"
@@ -15,6 +16,10 @@ if [ ! -f "$DICCIONARIO" ]; then
   gettext -d i2e -s "not found."
   echo
   exit 1
+}
+else if [ ! -f "$DICCIONARIO" ] && [ -f "$DICCIONARIO_LOCAL"]; then
+{
+  DICCIONARIO="$DICCIONARIO_LOCAL"
 }
 fi
 
