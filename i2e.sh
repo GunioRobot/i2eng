@@ -1,9 +1,22 @@
 #!/bin/bash
 
-# Script creado por Alfredo Casademunt (darkd@wanadoo.es) al 8-1-2000
-# bajo licencia GPL como alternativa en modo texto para i2e
+# Copyright 2000 Alfredo Casademunt <darkd@wanadoo.es>
+# Copyright 2010 Juan Francisco Cantero Hurtado <iam@juanfra.info>
 #
-# Modificado por Juan Francisco Cantero Hurtado <iam@juanfra.info>
+# This file is part of i2eng.
+#
+# i2eng is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 DICCIONARIO="/usr/share/i2e/i2e.dict"
 DICCIONARIO_LOCAL="$(pwd)/i2e.dict"
