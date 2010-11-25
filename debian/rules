@@ -53,13 +53,11 @@ binary-arch: build install
 #	dh_installemacsen
 #	dh_installinit
 	dh_installcron
-	dh_installmanpages
-#	dh_undocumented
+#	dh_installman i2e.1
 	dh_installchangelogs 
 	dh_strip
 	dh_compress
 	dh_fixperms
-	dh_suidregister
 	dh_installdeb
 	dh_shlibdeps
 	dh_gencontrol

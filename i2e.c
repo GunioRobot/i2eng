@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <locale.h>
+#include <string.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
 #include <unistd.h>
@@ -26,7 +27,6 @@ static gint miraPortapapeles( gpointer data )
 
   gtk_selection_convert( data, GDK_SELECTION_PRIMARY, atomo,
       GDK_CURRENT_TIME );
-  sleep( 0 );
 
   return TRUE;
 }
@@ -218,7 +218,7 @@ int main( int argc, char *argv[] )
 
   /* crea la ventana principal */
   ventana = gtk_window_new( GTK_WINDOW_TOPLEVEL );
-  gtk_window_set_modal( GTK_WINDOW( ventana ), TRUE );
+ /* gtk_window_set_modal( GTK_WINDOW( ventana ), TRUE );*/
   gtk_window_set_title( GTK_WINDOW(ventana), "i2e" );
   gtk_container_border_width( GTK_CONTAINER( ventana ), 5 );
 
@@ -315,7 +315,7 @@ int main( int argc, char *argv[] )
 
   gtk_widget_show( ventana );
 
-  gtk_idle_add( (GtkFunction)miraPortapapeles, ventana );
+  gtk_timeout_add( 500, (GtkFunction)miraPortapapeles, ventana );
 
   gtk_main();
   

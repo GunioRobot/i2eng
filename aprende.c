@@ -255,7 +255,8 @@ void aprende( GtkWidget *widget, gpointer data )
 
   gtk_entry_set_text( GTK_ENTRY( idioma[datos->i2c] ),
       gtk_entry_get_text( GTK_ENTRY( datos->entrada )));
-  gtk_widget_grab_focus( idioma[(! datos->i2c)] );
+/*  gtk_widget_grab_focus( idioma[ datos->i2c ] );*/
+  gtk_widget_grab_focus( marco );
 
   boton = gtk_button_new_with_label( _("Learn") );
   gtk_signal_connect( GTK_OBJECT( boton ), "clicked",

@@ -1,9 +1,101 @@
-i2e (0.5) unstable; urgency=low
+i2e (0.5.1-2) unstable; urgency=low
+
+  * Lintian fixes:
+    * Fixed location of manpage and binaries
+    * Fixed menu file
+    * Fixed the manpages' header
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Tue, 22 Mar 2005 02:34:15 +0100
+
+i2e (0.5.1-1) unstable; urgency=low
+
+  * Fake version increase in order to remove binary files from the sources
+    (po/es.mo and compressed manpages)
+  * Remove mo files when cleaning.
+  * Include <string.h> in i2e (note: should change those strcpy to strncpy...)
+  * Wrote an i2e-cli manpage
+  * Fixed i2e.1x and i2e.es.1 so that it refers to i2e-cli instead of i2e.sh
+  * Fixed typos in i2e.1x
+  * Remove the i2e.1 manpage from the package.
+  * Removed dh-make templates.
+  * Debian/copyright fixes including removal of dh-make template and proper
+    GPL text.
+  * Removed full stop after description.
+  * Updated spanish translation to adapt to the i2e.sh->i2e-cli change
+  * Fixed 'aniway' translation as suggested by Cesar Martinez Izquierdo (Closes:# 229039)
+  * Mention the Internet Translation Project in the README.Debian file as
+    something that could be done in the future...
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Fri, 23 Jan 2004 18:50:06 +0100
+
+i2e (0.5-6) unstable; urgency=low
+
+  * Applied patch from David Reviejo which uses a different GTK
+    function and avoids locking the application (or the GUI)
+    Thanks! (Closes: #183131)
+  * Moved i2e.sh to i2e-cli since this is the one providing a command
+    line only application. In the future maybe a wrapper script could
+    be included (that called i2e or i2e-cli based on DISPLAY definition 
+    or arguments) (Closes: #189540)
+  * Adjusted README/LEEME for new i2e.sh's name
+  * Removed call to dh_undocumented from the rules file
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Thu, 16 Oct 2003 15:27:48 +0200
+
+i2e (0.5-5) unstable; urgency=low
+
+  * i2e.sh is now #!/bin/bash, since I'm not sure how to change 'declare -i'
+    to work for other shells.
+  * added a 3 sec time wait in the call to the function that analyses the
+    clipboard 'miraPortapapeles' (which is called by gtk_idle_add) 
+    (Closes: #179284, #177782)
+  * Added proper information in the README.Debian file (Closes: #179282)
+  * Removed undocumented link.
+  * Added clipboard awareness as one of the features of i2e in the
+    description.
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Tue, 11 Feb 2003 16:17:10 +0100
+
+i2e (0.5-4) unstable; urgency=low
+
+  * Fixed /usr/man to /usr/share/man (Closes: #126990)
+  * Local manpage fixed (Closes: #141953)
+  * No lintian errors (Closes: #141949, #141954)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Mon,  2 Sep 2002 19:59:09 +0200
+
+i2e (0.5-3) unstable; urgency=low
+
+  * Updated to new debian standards (added Build-Depends) and lintian clean
+  * Added manpage patch (Closes: #92529)
+  * Remoded set_modal from main window definition (what is it used for?)
+    so that the "Learn" button works ok.
+    (Closes: #102848)
+  * Fixed manpages location (Closes: #103724)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Thu, 20 Dec 2001 12:56:10 +0100
+
+i2e (0.5-2) unstable; urgency=low
+
+  * Fixed localtion of man files (Closes: #91773)
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Mon, 26 Mar 2001 09:29:58 +0200
+
+i2e (0.5-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Thu, 25 May 2000 15:13:00 +0200
+
+i2e (0.4.1-2) unstable; urgency=low
+
+  * Adopted package
+
+ -- Javier Fernandez-Sanguino Pen~a <jfs@computer.org>  Wed,  9 Feb 2000 17:39:50 +0100
+
+i2e (0.4.1-1) unstable; urgency=low
 
   * Initial Release.
 
- -- Alfredo Casademunt <darkd@wanadoo.es>  Thu, 10 Feb 2000 02:47:46 +0100
+ -- Alfredo Casademunt <darkd@nexo.es>  Mon, 15 Nov 1999 03:19:21 +0100
 
-Local variables:
-mode: debian-changelog
-End:

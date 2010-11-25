@@ -1,0 +1,86 @@
+.TH i2e "1" 8-1-2000 "0.5 Version" "User commands"
+.SH NAME
+i2e \- English-Spanish Dicitionary
+.SH SYNOPSIS
+.B i2e
+.SH USAGE
+Selecting a word with the mouse in any aplication is all that's needed,
+i2e will translate it.
+.PP
+The word can also be introduced at the prompt line, and you only have to push
+"Translate" button.
+.PP
+In either case, Page Up and Page Down keys will move the translation text.
+.SH FILES
+.TP
+.I /usr/bin/i2e
+binary file for X11
+.TP
+.I /usr/bin/i2e.sh
+binary file for text mode
+.TP
+.I /usr/share/i2e/i2e.dict
+the dicitionary itself
+.TP
+.I /usr/man/man1/i2e.1.gz
+English manual page
+.TP
+.I /usr/man/es_ES/man1/i2e.1.gz
+Spanish manual page
+.TP
+.I /usr/share/locale/es/LC_MESSAGES/i2e.mo
+messages uttered by i2e and i2e.sh in Spanish
+.TP
+.I ~/.i2erc
+where buttons status is kept
+.TP
+.I ~/.i2e.dict
+where added up words are
+.SH WARNING
+When adding words to the dicitionary (button "Learn") it should be taken into
+account that when a word allows several different translations, they should be
+learned separately.
+.PP
+For example, 'hola' can be translated as 'hi' or as 'hello', so, in order to
+add 'hola' to the dicitionary with both translations, 'hola' and 'hi' should be
+learnt first and then 'hola' and 'hello'.
+.SH ACKNOWLEDGEMENTS
+.B i2e
+was inspired by the program
+.B eidic.tcl
+(available at http://www.lcc.uma.es/personal/trivino/trivino.html)
+by José Luis Triviño <trivino@alcor.lcc.uma.es> from which the words database
+is taken (and modified).
+.PP
+ I thank Miquel Collado <miquelc@gestmusic.es>, for his comments on the
+source code.
+.PP
+ I also thank Amaya Rodrigo Sastre <barbwired@bigfoot.com> for translating
+the README file and man page into English, and for reviewing my translation
+into English of the messages uttered by i2e and i2e.sh
+.PP
+ I also get on my knees in groveling, abject obsequiousness and
+kiss the feet of the Unix-and-English-Translation God Lloyd
+Zusman <lloyd@zusman.net>, without whose brilliant English-usage
+insights and very humble nature, this document would otherwise have
+had to be consigned to the dustbin of history.
+.PP
+ I thank Miquel Sergio Ahumada Navea <san@inf.utfsm.cl>, for building an .rpm
+package.
+.PP
+ I thank José M. Macías <macias@cica.es> and Ricardo Villalba
+<rvmsoft@jazzfree.com> for their comments on making i2e more comfortable
+to use.
+.PP
+Thanks to all of them!
+.SH DOWNLOAD
+Last version of i2e can be downloaded from http://darkd.virtualave.net
+.SH AUTHOR
+The author, Alfredo Casademunt <darkd@wanadoo.es>, will thank:
+.PP
+1) comments and constructive criticism regarding the program.
+.PP
+2) sending of new words added to the dictionary, in other words, ~/.i2e.dict
+file for its future inclusion in the main dictionary.
+.PP
+3) any form of cooperation with the source code or the dictionary.

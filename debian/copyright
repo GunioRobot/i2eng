@@ -1,10 +1,24 @@
-This package was written by Alfredo Casademunt darkd@wanadoo.es on Thu, 10 Feb 2000 02:47:46 +0100.
+This package was debianized by Alfredo Casademunt darkd@nexo.es on
+Mon, 15 Nov 1999 03:19:21 +0100.
+and later on adopted by Debian GNU/Linux developer
+Javier Fernández-Sanguino Peña <jfs@computer.org>
 
-Copyright: GPL (see /usr/doc/copyright/GPL)
+It was downloaded from http://darkd.virtualave.net
 
+Upstream Author: Alfredo Casademunt darkd@nexo.es
 
-You are free to distribute this software under the terms of
-the GNU General Public License.
+Copyright:
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 1, or (at your option)
+    any later version.
+ 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+ 
 On Debian GNU/Linux systems, the complete text of the GNU General
-Public License can be found in /usr/doc/copyright/GPL file
+Public License can be found in /usr/share/common-licenses/GPL file
 

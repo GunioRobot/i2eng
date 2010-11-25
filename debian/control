@@ -1,11 +1,18 @@
 Source: i2e
 Section: text
 Priority: optional
-Maintainer: Alfredo Casademunt <darkd@wanadoo.es>
-Standards-Version: 2.4.0.0
+Maintainer: Javier Fernandez-Sanguino Pen~a <jfs@computer.org>
+Build-Depends: gettext, libgtk1.2-dev, debhelper (>> 3.0.0)
+Standards-Version: 3.5.8.0
 
 Package: i2e
 Architecture: any
 Depends: gettext,${shlibs:Depends}
-Description: English-Spanish dictionary.
- English-Spanish dictionary. For X and text mode.
+Description: English-Spanish translation dictionary
+ English to Spanish (and viceversa) translation dictionary. 
+ It can be used both in X and text mode and has a learning
+ function that can be used to add more terms to
+ the provided dictionary.
+ .
+ I2e also provides a nice clipboard capability which permits
+ it to translate any word which has been selected in X mode.

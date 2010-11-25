@@ -57,7 +57,7 @@ sobre el código fuente
  Gracias también a Amaya Rodrigo Sastre <barbwired@bigfoot.com> por 
 traducir al Inglés los ficheros README y la pagina del manual, así 
 como revisar mi traducción al Inglés de los mensajes emitidos
-por i2e e i2e.sh
+por i2e e i2e-cli
 
  También me arrodillo, humillándome, con abatido servilismo y beso los
 pies del Dios del Unix y la Traducción Lloyd Zusman <lloyd@zusman.net>,
@@ -94,7 +94,7 @@ Versión 0.2:
 Versión 0.3:
 ------------
 
- Añadido el script i2e.sh para consultar el diccionario en modo texto.
+ Añadido el script i2e-cli para consultar el diccionario en modo texto.
  Cambios menores en la estructura del diccionario y en la presentación
 de la traducción del Español al Ingles.
 

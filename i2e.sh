@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-# i2e.sh Versión 0.3
+# i2e-cli Versión 0.3
 
 # Script creado por Alfredo Casademunt (darkd@wanadoo.es) al 8-1-2000
 # bajo licencia GPL como alternativa en modo texto para i2e
@@ -21,9 +21,9 @@ fi
 if [ -z "$1" ]; then
 {
   echo
-  gettext -d i2e -s "i2e.sh [-re] [word]"
+  gettext -d i2e -s "i2e-cli [-re] [word]"
   echo
-  gettext -d i2e -sn "By default, i2e.sh translates from English into Spanish with"
+  gettext -d i2e -sn "By default, i2e-cli translates from English into Spanish with"
   gettext -d i2e -s " a \"raw\" search."
   gettext -d i2e -s "With -r option word is translated from Spanish into English."
   gettext -d i2e -s "With -e option an \"exact\" search will be performed."

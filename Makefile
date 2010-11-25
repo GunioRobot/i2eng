@@ -30,25 +30,29 @@ po/es.mo : po/es.po
 	msgfmt -o po/es.mo po/es.po
 
 clean :
-	rm -rf *.o *~ *.bak *.mo i2e
+	rm -rf *.o *~ *.bak i2e
+	rm -f man/index.bt
+	rm -f po/*.mo
 
 install :
-	install -g root -o root i2e $(DESTDIR)/usr/X11R6/bin
+	install -m 755 -g root -o root i2e $(DESTDIR)/usr/bin
 	install -d $(DESTDIR)/usr/share/locale/es/LC_MESSAGES
-	install -g root -o root po/es.mo $(DESTDIR)/usr/share/locale/es/LC_MESSAGES/i2e.mo
-	install -g root -o root i2e.sh $(DESTDIR)/usr/bin
-	install -g root -o root man/man1/i2e.1.gz $(DESTDIR)/usr/man/man1
+	install -m 644 -g root -o root po/es.mo $(DESTDIR)/usr/share/locale/es/LC_MESSAGES/i2e.mo
+	install -m 755 -g root -o root i2e.sh $(DESTDIR)/usr/bin/i2e-cli
+	install -d $(DESTDIR)/usr/share/man/man1
+	install -m 644 -g root -o root man/man1/i2e.1x $(DESTDIR)/usr/share/man/man1
+	install -m 644 -g root -o root man/man1/i2e-cli.1 $(DESTDIR)/usr/share/man/man1
 	install -d $(DESTDIR)/usr/share/i2e
-	install -g root -o root i2e.dict $(DESTDIR)/usr/share/i2e
-	install -d $(DESTDIR)/usr/man/es/man1
-	install -g root -o root man/es/man1/i2e.1.gz $(DESTDIR)/usr/man/es/man1
+	install -m 644 -g root -o root i2e.dict $(DESTDIR)/usr/share/i2e
+	install -d $(DESTDIR)/usr/share/man/es/man1
+	install -m 644 -g root -o root man/es/man1/i2e.es.1 $(DESTDIR)/usr/share/man/es/man1/i2e.1
 
 uninstall :
-	rm $(DESTDIR)/usr/X11R6/bin/i2e
+	rm $(DESTDIR)/usr/bin/i2e
 	rm $(DESTDIR)/usr/share/locale/es/LC_MESSAGES/i2e.mo
-	rm $(DESTDIR)/usr/bin/i2e.sh
-	rm $(DESTDIR)/usr/man/man1/i2e.1.gz
-	rm $(DESTDIR)/usr/man/es/man1/i2e.1.gz
+	rm $(DESTDIR)/usr/bin/i2e-cli
+	rm $(DESTDIR)/usr/share/man/man1/i2e.1
+	rm $(DESTDIR)/usr/share/man/es/man1/i2e.1
 	rm $(DESTDIR)/usr/share/i2e/i2e.dict
 	rmdir $(DESTDIR)/usr/share/i2e
 #	rmdir $(DESTDIR)/usr/man/es/man1

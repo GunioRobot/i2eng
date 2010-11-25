@@ -1,0 +1,43 @@
+.TH i2e "1" 8-1-2000 "0.5 Version"
+.SH NAME
+i2e-cli \- English-Spanish Dicitionary Command Line Interface
+.SH SYNOPSIS
+.B i2e-cli [-r] [-e] word
+.SH USAGE
+.B i2e-cli
+is an English to Spanish (and viceversa) dictionary which uses the same word 
+database as 
+.B i2e
+to provide a translation.
+.PP
+By default \fBi2e-cli\fR will translate from English to Spanish using a
+broad search, i.e. it will present any term that contains the word given as an 
+input.
+.PP
+\fBi2e-cli\fR will exit with \fB1\fR if the translation dictionary is not found,
+otherwise it will exit with \fB0\fR return value.
+.SH OPTIONS
+.B i2e-cli
+can be given two options:
+.TP
+.I -r
+Translate from Spanish to English.
+.TP
+.I -e
+Do an \fIexact\fR match.
+.SH FILES
+.TP
+.I /usr/share/i2e/i2e.dict
+File used as translation dictionary.
+.TP
+.I ~/.i2e.dict
+file where words added by the user reside.
+.SH KNOWN BUGS
+\.B i2e-cli
+will not accept more than one word in the command line.
+.SH DOWNLOAD
+The latest version of i2e can be downloaded from http://darkd.virtualave.net
+.SH AUTHOR
+The author of this manpage is Javier Fernandez-Sanguino, the author of
+.B i2e 
+is Alfredo Casademunt.

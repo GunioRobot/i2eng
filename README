@@ -55,7 +55,7 @@ source code.
 
  I also thank Amaya Rodrigo Sastre <barbwired@bigfoot.com> for translating
 the README file and man page into English, and for reviewing my translation
-into English of the messages uttered by i2e and i2e.sh
+into English of the messages uttered by i2e and i2e-cli
 
 I also get on my knees in groveling, abject obsequiousness and
 kiss the feet of the Unix-and-English-Translation God Lloyd
@@ -90,7 +90,7 @@ Manual page has also been changed.
 0.3 Version:
 ------------
 
- i2e.sh script has been added to look up the dictionary in text mode.
+ i2e-cli script has been added to look up the dictionary in text mode.
 Minor changes to dictionary's structure and to the formatting of the
 translation from Spanish into English.
 

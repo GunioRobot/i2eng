@@ -1,6 +1,31 @@
-The Debian Package i2e
-----------------------------
+i2e for DEBIAN
+----------------------
 
-Comments regarding the Package
+One of the nice features of this package is that it is clipboard aware, 
+that is, if you select any text it will automagically be translated in
+i2e.
 
-Alfredo Casademunt <darkd@wanadoo.es>, Thu, 10 Feb 2000 02:47:46 +0100
+Unfortunately, the upstream maintainer is no longer updating this package
+(as of the time of this writting).  Since the i2e.dict file is used by other 
+software (such as wordtrans, also provided as a Debian package) and it could be
+updated more, it might (in the future) be provided in a separate package 
+(it's in my TODO list)
+
+In any case, if you have added new words through the "learn" function I would
+really appreciate you sent your ~/.i2erc file to i2e@packages.debian.org
+or submit your words as a wishlist bug (use 'reportbug') on ie2.
+New translations will be added to i2e.dict file in future releases of this
+Debian package.
+
+Also, if you have coding skills and some free time available, it would be great
+if files from the "Internet Dictionary Project" [0]  were included here!
+Notice that I still have to revise the copyright [1], disclaimer [2] and 
+format [3], to determine if that data can be included in Debian proper
+
+Javier Fernández-Sanguino Peña <jfs@computer.org>
+Fri, 23 Jan 2004 19:13:14 +0100
+
+[0] http://www.june29.com/IDP/
+[1] http://www.june29.com/IDP/IDPcopyright.html
+[2] http://www.june29.com/IDP/IDPdisclaimer.html
+[3] http://www.june29.com/IDP/IDPfileformat.html

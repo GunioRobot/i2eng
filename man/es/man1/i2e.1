@@ -1,0 +1,89 @@
+.TH i2e "1x" 8-1-2000 "Versión 0.5" 
+.SH NOMBRE
+i2e \- Diccionario Inglés-Español
+.SH SINOPSIS
+.B i2e
+.SH MODO DE USO
+Basta con marcar con el ratón una palabra en cualquier aplicación
+e i2e la traducirá.
+.PP
+También se puede introducir la palabra a traducir en la linea de entrada
+y pulsar el botón de "traducir".
+.PP
+En ambos casos las teclas pagina arriba y pagina abajo desplazan el texto
+de la traducción.
+.SH FICHEROS
+.TP
+.I /usr/bin/i2e
+el fichero ejecutable para X11
+.TP
+.I /usr/bin/i2e.sh
+el fichero ejecutable en modo texto
+.TP
+.I /usr/share/i2e/i2e.dict
+el diccionario
+.TP
+.I /usr/man/man1/i2e.1.gz
+la pagina del manual en Inglés
+.TP
+.I /usr/man/es_ES/man1/i2e.1.gz
+la pagina del manual en Español
+.TP
+.I /usr/share/locale/es/LC_MESSAGES/i2e.mo
+los mensajes que emiten i2e e i2e.sh traducidos al Español
+.TP
+.I ~/.i2erc
+aquí se guarda el estado de los botones del programa
+.TP
+.I ~/.i2e.dict
+y aquí las palabras añadidas al diccionario
+.SH AVISO
+A la hora de añadir palabras al diccionario (botón "Aprender") se
+ha de tener en cuenta, que si una palabra admite varias traducciones,
+estas se han de aprender por separado.
+.PP
+Por ejemplo 'hola' lo podemos traducir por 'hi' o por 'hello', así
+que para añadir 'hola' al diccionario con ambas traducciones, primero
+"aprendemos" 'hola' y 'hi' y luego 'hola' y 'hello'.
+.SH AGRADECIMIENTOS
+.B i2e
+esta inspirado en el programa
+.B eidic.tcl
+(disponible en http://www.lcc.uma.es/personal/trivino/trivino.html)
+de José Luis Triviño <trivino@alcor.lcc.uma.es> y del
+cual esta tomada (y modificada) la base de datos de palabras.
+.PP
+Gracias a Miquel Collado <miquelc@gestmusic.es> por sus comentarios
+sobre el código fuente.
+.PP
+Gracias también a Amaya Rodrigo Sastre <barbwired@bigfoot.com> por traducir
+al Inglés los ficheros README y la pagina del manual, así como revisar
+mi traducción al Inglés de los mensajes emitidos por i2e e i2e.sh
+.PP
+También me arrodillo, humillándome, con abatido servilismo y beso los
+pies del Dios del Unix y la Traducción Lloyd Zusman <lloyd@zusman.net>,
+sin cuyos brillantes conocimientos del uso del inglés y su carácter
+humilde la revisión de la traducción al inglés hubiera quedado relegada
+a la noche de la Historia.
+.PP
+ Gracias a Sergio Ahumada Navea <san@inf.utfsm.cl> por currarse
+el paquete .rpm
+.PP
+ Gracias a José M. Macías <macias@cica.es> y a Ricardo Villalba
+<rvmsoft@jazzfree.com> por sus comentarios para que i2e sea más
+cómodo de usar.
+.PP
+¡ Muchas gracias a todos ellos !
+.SH DESCARGA
+La ultima versión disponible del paquete i2e puede ser descargada de
+http://darkd.virtualave.net
+.SH AUTOR
+El autor, Alfredo Casademunt <darkd@wanadoo.es>, agradecerá:
+.PP
+1) comentarios y criticas constructivas al programa.
+.PP
+2) el envío de las palabras añadidas al diccionario, o sea el
+fichero ~/.i2e.dict, para su posible inclusión en el diccionario
+principal.
+.PP
+3) colaboraciones con el código fuente o con el diccionario.

@@ -1,16 +1,18 @@
-# Mensajes en Español para i2e e i2e.sh
+# Mensajes en Español para i2e e i2e-cli
 # Alfredo Casademunt <darkd@wanadoo.es>, 1999.
 # Revisado por Amaya Rodrigo Sastre <barbwired@bigfoot.com>
 # Spanish messages for i2e and i2e.sh
 # Reviewed by Amaya Rodrigo Sastre <barbwired@bigfoot.com>
+# Modified by Javier Fernandez-Sanguino for the Debian distribution
+# (i2e.sh -> i2e-cli
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: i2e 0.5\n"
 "POT-Creation-Date: 1999-12-17 18:22+0200\n"
-"PO-Revision-Date: 1999-12-17 18:22+0200\n"
-"Last-Translator: Amaya Rodrigo Sastre <barbwired@bigfoot.com>\n"
-"Language-Team: Español <darkd@wanadoo.es> y <barbwired@bigfoot.com>\n"
+"PO-Revision-Date: 2004-01-03 18:52:50+0100\n"
+"Last-Translator: Javier Fernandez-Sanguino Peña <jfs@debian.org>\n"
+"Language-Team: Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
@@ -90,20 +92,20 @@ msgstr "Diccionario"
 msgid "not found."
 msgstr "no encontrado."
 
-msgid "i2e.sh [-re] [word]"
-msgstr "i2e.sh [-re] [palabra]"
+msgid "i2e-cli [-re] [word]"
+msgstr "i2e-cli [-re] [palabra]"
 
-msgid "By default, i2e.sh translates from English into Spanish with"
-msgstr "Por defecto i2e.sh traduce del Inglés al Español con"
+msgid "By default, i2e-cli translates from English into Spanish with"
+msgstr "Por defecto i2e-cli traduce del Inglés al Español con"
 
 msgid " a \"raw\" search."
-msgstr " una búsqueda \"bruta\"."
+msgstr " una búsqueda «bruta»."
 
 msgid "With -r option word is translated from Spanish into English."
 msgstr "Con la opción -r traduce del Español al Inglés."
 
 msgid "With -e option an \"exact\" search will be performed."
-msgstr "Con la opción -e hace una búsqueda \"exacta\"."
+msgstr "Con la opción -e hace una búsqueda «exacta»."
 
 msgid "Option"
 msgstr "Opción"
