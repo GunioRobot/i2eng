@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Copyright 2000 Alfredo Casademunt <darkd@wanadoo.es>
 # Copyright 2010 Juan Francisco Cantero Hurtado <iam@juanfra.info>
