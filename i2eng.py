@@ -96,30 +96,31 @@ def ayuda_inicio():
     print ("---") 
         
 def principal():
-    entrada = input(": ")
-    entrada.lower()
+    while True:
+        entrada = input(": ")
+        entrada.lower()
 
-    if "/exit" in entrada:
-        sys.exit()
-    elif "/cambiar" in entrada:
-        cambiar_diccionario()
-    elif "/version" in entrada:
-        version()
-    elif "/versión" in entrada:
-        version()
-    elif "/ayuda" in entrada:
-        ayuda()
-    elif "/help" in entrada:
-        ayuda()
-    elif "/precision" in entrada:
-        precision()
-    elif "/precisión" in entrada:
-        precision()
-    else:
-        busqueda(entrada)
+        if "/exit" in entrada:
+            sys.exit()
+        elif "/cambiar" in entrada:
+            cambiar_diccionario()
+        elif "/version" in entrada:
+            version()
+        elif "/versión" in entrada:
+            version()
+        elif "/ayuda" in entrada:
+            ayuda()
+        elif "/help" in entrada:
+            ayuda()
+        elif "/precision" in entrada:
+            precision()
+        elif "/precisión" in entrada:
+            precision()
+        else:
+            busqueda(entrada)
 
-    print ("---")
-    principal()
+        print ("---")
+
 
 generar_diccionario()
 
