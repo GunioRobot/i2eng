@@ -20,6 +20,7 @@
 from collections import defaultdict
 import re
 import sys
+import textwrap
 
 diccionario_es = defaultdict(list)
 diccionario_en = defaultdict(list)
@@ -55,15 +56,17 @@ def busqueda(palabra):
                     print ('-', resultado)
 
 def ayuda():
-    texto_help = """
-Comandos:
-/ayuda -> Este texto
-/exit -> Sale del programa
-/cambiar -> Cambia el diccionario por defecto
-/precision -> Cambia entre una búsqueda aproximada y otra más precisa
-/version -> Muestra la versión
-"""
-    print (texto_help)
+    texto_help = (
+            """
+            Comandos:
+            /ayuda -> Este texto
+            /exit -> Sale del programa
+            /cambiar -> Cambia el diccionario por defecto
+            /precision -> Cambia entre una búsqueda aproximada y otra más precisa
+            /version -> Muestra la versión
+            """
+            )
+    print (textwrap.dedent(texto_help))
 
 def version():
     texto_version = "Versión de desarrollo. Puedes ver los autores y licencia en https://github.com/juanfra684/i2eng"
