@@ -18,7 +18,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from collections import defaultdict
-import re
 import sys
 import textwrap
 
@@ -41,15 +40,16 @@ def numero_definiciones():
     print ("---")
 
 def busqueda(palabra):
-    patron_busqueda = re.compile(palabra, re.IGNORECASE).match
-    
-    for linea in diccionario:
-        if busqueda_precisa == True:
-            if patron_busqueda(linea):
-                print ('=>', linea)
-                for resultado in (diccionario[linea]):
-                    print ('-', resultado)
+    if busqueda_precisa == True:
+        if diccionario.get(palabra) != None:
+            print ('=>', palabra)
+            for resultado in (diccionario.get(palabra)):
+                print ('-', resultado)
         else:
+            print ("#", palabra, "no existe en el diccionario. Revisa si está bien escrita o prueba con la búsqueda aproximada.")
+
+    else:
+        for linea in diccionario:
             if palabra in linea:
                 print ('=>', linea)
                 for resultado in (diccionario[linea]):
