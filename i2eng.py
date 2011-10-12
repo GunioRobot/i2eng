@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import readline
 from collections import defaultdict
 import sys
 import textwrap
@@ -100,29 +101,34 @@ def ayuda_inicio():
         
 def principal():
     while True:
-        entrada = input(": ")
-        entrada.lower()
+        try:
+            entrada = input(": ")
+            entrada.lower()
 
-        if "/exit" in entrada:
+            if "/exit" in entrada:
+                sys.exit()
+            elif "/cambiar" in entrada:
+                cambiar_diccionario()
+            elif "/version" in entrada:
+                version()
+            elif "/versión" in entrada:
+                version()
+            elif "/ayuda" in entrada:
+                ayuda()
+            elif "/help" in entrada:
+                ayuda()
+            elif "/precision" in entrada:
+                precision()
+            elif "/precisión" in entrada:
+                precision()
+            else:
+                busqueda(entrada)
+
+            print ("---")
+
+        except KeyboardInterrupt:
+            print ("See you!")
             sys.exit()
-        elif "/cambiar" in entrada:
-            cambiar_diccionario()
-        elif "/version" in entrada:
-            version()
-        elif "/versión" in entrada:
-            version()
-        elif "/ayuda" in entrada:
-            ayuda()
-        elif "/help" in entrada:
-            ayuda()
-        elif "/precision" in entrada:
-            precision()
-        elif "/precisión" in entrada:
-            precision()
-        else:
-            busqueda(entrada)
-
-        print ("---")
 
 
 generar_diccionario()
