@@ -27,7 +27,7 @@ diccionario_en = defaultdict(list)
 
 def generar_diccionario():
     fichero_diccionario = open("i2e.dict", "r")
-    
+
     for linea in fichero_diccionario:
         ingles, espaniol = linea.rstrip('\n').split(" : ")
         diccionario_es[espaniol].append(ingles)
@@ -81,7 +81,7 @@ def cambiar_diccionario():
         print ("\n", "Diccionario: Inglés -> Español")
     elif diccionario == diccionario_en:
         diccionario = diccionario_es
-        print ("\n", "Diccionario: Español -> Inglés") 
+        print ("\n", "Diccionario: Español -> Inglés")
 
 busqueda_precisa = True
 def precision():
@@ -97,8 +97,8 @@ def ayuda_inicio():
     print ("Diccionario por defecto: Español -> Inglés")
     print ("Para buscar un término simplemente escríbelo.")
     print ("""Puedes cambiar el diccionario escribiendo "/cambiar", salir con "/exit" y obtener más ayuda con "/ayuda".""")
-    print ("---") 
-        
+    print ("---")
+
 def principal():
     while True:
         try:
