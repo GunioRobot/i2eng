@@ -97,7 +97,7 @@ def version():
     # Concatenado con +, porque con una coma no interpreta nada e imprime
     # hasta los paréntesis.
     texto_version = ("Versión de desarrollo. Puedes ver los autores y" +
-            "licencia en https://github.com/juanfra684/i2eng")
+            " licencia en https://github.com/juanfra684/i2eng")
     print ("\n", texto_version)
 
 # Por defecto el programa inicia Español -> Inglés y esto invierte la selección
