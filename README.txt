@@ -1,12 +1,16 @@
-h1. i2eng - Traductor Inglés-Español para sistemas *nix
+i2eng - Traductor Inglés-Español para sistemas *nix
+===================================================
+:Author: Juan Francisco Cantero Hurtado
+:Email:  iam@juanfra.info
 
-h2. Introducción
 
-h2. Instalación
+== Introducción
 
-h2. Uso
+== Instalación
 
-h2. Licencia de este documento
+== Uso
+
+== Licencia de este documento
 
 Copyright 2010, 2011 Juan Francisco Cantero Hurtado <iam@juanfra.info>
 
@@ -25,3 +29,5 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+// vim: set syntax=asciidoc:
