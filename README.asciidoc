@@ -10,6 +10,15 @@ i2eng - Traductor Inglés-Español para sistemas *nix
 
 == Uso
 
+== TODO
+
+- Completar este documento
+
+- Hacer una versión lowmem (más todavía)
+
+- Crear script para añadir información al diccionario
+
+
 == Licencia de este documento
 
 Copyright 2010, 2011 Juan Francisco Cantero Hurtado <iam@juanfra.info>
